@@ -1,0 +1,12 @@
+app_calc_add:
+    path: /calc/add/{num1}/{num2}
+    controller: App\Controller\CalcController::add
+app_calc_substract:
+    path: /calc/substract/{num1}/{num2}
+    controller: App\Controller\CalcController::substract
+app_calc_multiply:
+    path: /calc/multiply/{num1}/{num2}
+    controller: App\Controller\CalcController::multiply
+app_calc_divide:
+    path: /calc/divide/{num1}/{num2}
+    controller: App\Controller\CalcController::divide
