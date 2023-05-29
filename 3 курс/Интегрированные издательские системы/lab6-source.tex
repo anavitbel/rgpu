@@ -1,0 +1,126 @@
+% "Лабораторная работа № 6-1"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+% report, book
+
+% Русский язык
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+
+
+\usepackage{wasysym}
+
+\usepackage{hyperref}
+
+%Заговолок
+\author{Беленко А.В., 1 гр. 2 подгр.}
+\title{Особености технологии набора технического текста в \LaTeX{}}
+\date{\today}
+
+
+\begin{document} % начало документа
+\maketitle
+\newpage
+\begin{center}
+\section{О \LaTeX}
+\end{center}
+\subsection{Для чего предназначена издательская система \LaTeX?}
+Пакет позволяет автоматизировать многие задачи набора текста и подготовки статей, включая набор текста на нескольких языках, нумерацию разделов и формул, перекрёстные ссылки, размещение иллюстраций и таблиц на странице, ведение библиографии и др. Кроме базового набора существует множество пакетов расширения \LaTeX.
+\subsection{В каких случаях рационально её использовать?}
+\begin{flushright}
+Когда нужно вводить много физических и математических формул. Так как в \LaTeX они отображаются корректно на любом устройстве.
+\end{flushright}
+\subsection{Какие преимущества имеет работа в этот системе?}
+\begin{flushleft}
+\begin{enumerate}
+\item Она {\Large полностью бесплатна}.
+\item Расширяема за счёт \href{https://www.ctan.org/pkg}{пакетов}.
+\item Формулы отображаются корректно на всех устрйоствах.
+\item Текст выглядит <<как в книге>>.
+\end{enumerate}
+\end{flushleft}
+\subsection{Какие сложности могут возникнуть при работе в этот системе?}
+Нет возможность WYSIWYG, из-за этого поначалу будет неудобно пользоваться. Также форматирование текста сложнее делать, чем в системах с WYSIWYG.
+\subsection{Какие недостатки отмечают пользователи при работе с этой системой?}
+\begin{itemize}
+\item Отсутствие WYSIWYG
+\footnote{хотя кто-то считает это плюсом, так как в этом случае не нужно отвлекаться на оформление текста},
+\item \LaTeX плохо предназначен для работы с графикой.
+\end{itemize}
+\newpage
+\section{Изменение размера шрифта}
+\subsection{Комментарии и подсказки}
+\scriptsize Подсказка\\
+\Large Пример\\
+\subsection*{Команды управления размером шрифта}
+\tiny самый маленький\\
+\scriptsize меньше меньшего\\
+\footnotesize маньший
+\small маленький\\
+\normalsize обычный\\
+\large большой\\
+\Large больший\\
+\LARGE больше большего\\
+\huge очень большой\\
+\Huge очень большой\\
+
+\normalsize
+Мы используем издательскую систему \TeX
+\footnote{точнее \LaTeX}
+
+Разработчиком \TeX является известный программист
+\footnote{Дональд Кнут} 
+
+\section{Форматирование текста}
+\subsection{Выравнивание}
+За выравнивание по центру отвечает окружение center.\\
+За выравнивание по правому краю отвечает окружение flushright.\\
+За выравнивание по правому краю отвечает окружение flushleft.\\
+\textit{Пример}
+\begin{center}
+Лабораторная работа № 6
+\end{center}
+
+\begin{flushright}
+\today
+\end{flushright}
+
+\begin{flushleft}
+План выполнения работы
+\end{flushleft}
+
+\subsection{Создание списков}
+\subsubsection{Маркированный список}
+\begin{itemize}
+\item MS Word
+\item MS Publisher
+\item Scribus
+\item \LaTeX
+\begin{itemize}
+\item Текст
+\item Таблицы
+\item Графика
+\item Презентация
+\end{itemize}
+\end{itemize}
+\subsubsection{Нумерованный список}
+\begin{enumerate}
+\item ЛР
+\item ИСР
+\item ВСР
+\end{enumerate}
+\section{Ссылки}
+Гиперссылки создаются с помощью команды href и двух обязательных аргументов
+\begin{itemize}
+\item самой ссылки, т. е. адреса
+\item объект (слово), которое является ссылкой
+\end{itemize}
+\href{https://moodle.herzen.spb.ru/mod/assign/view.php?id=39031}{Пример}
+\end{document} % конец документа

@@ -1,0 +1,10 @@
+<table id="people">
+    <tr>
+    <th>First name</th><th>Last name</th><th>Email</th><th>Message</th><th>Link</th>
+    </tr>
+    {% for _el in cl %}
+    <tr>
+    <td>{{_el.first_name}}</td><td>{{_el.last_name}}</td><td>{{_el.email}}</td><td>{{_el.message}}</td><td><a href={{"http://localhost:8000/users/%s"|format(_el.link)}}>QR-CODE</a></td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>{{ title }}</title><meta charset="utf-8">
+  {% if style %}
+  {% include style %}
+  {% endif %}
+ </head>
+ <body>
+  {% if form %}
+  {% include form %}
+  {% endif %}
+  {% if qrcode %}
+  <p class="fig"><img src={{qrcode}} alt="QR-CODE"></p>
+  {% endif %}
+  {% if (table and cl) %}
+  {% include table %}
+  {% endif %}
+  <p><a href="http://localhost:8000/">Назад</a></p>
+ </body>
+</html>

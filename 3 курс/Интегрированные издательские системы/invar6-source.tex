@@ -1,0 +1,44 @@
+% "Инвариативная самостоятельная работа № 6"
+
+\documentclass[a4paper,12pt]{article} % тип документа -- лсит А4 с 12 шрифтом текста
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % математические символы, формулы и т. д.
+
+\usepackage{wasysym}
+
+\usepackage{hyperref}
+
+\author{Беленко А.В., 1 гр. 2 подгр.} % имя автора
+\title{Таблица команд} % название документа
+\date{\today} % дата создани документа
+
+\begin{document}
+\maketitle
+\newpage
+\section*{Команды форматирования в \LaTeX}
+\begin{tabular}{ l | r }
+  \textbf{Назначение команды} & \textbf{Вид (написание) команды} \\ \hline
+  самый маленький			  & tiny \\ \hline
+  меньше меньшего			  & scriptsize \\ \hline
+  меньший					  & footnotesize \\ \hline
+  маленький					  & small \\ \hline
+  обычный					  & normalsize \\ \hline
+  большой					  & large \\ \hline
+  больший					  & Large \\ \hline
+  больше большего			  & LARGE \\ \hline
+  очень большой				  & huge \\ \hline
+  самый большой				  & Huge \\ \hline
+  создать сноску			  & footnote \\ \hline
+  гиперссылка				  & href \\ \hline
+  выравнивание по центру	  & begin{center}, end{center} \\ \hline
+  выравнивание по правому краю & begin{flushright}, end{flushright} \\ \hline
+  выравнивание по левому краю & begin{flushleft}, end{flushleft} \\ \hline
+  нумерованный список 		  & begin{enumerate}, item, end{enumerate} \\ \hline
+  маркированный список		  & begin{itemize}, item, end{itemize} \\ \hline
+  сноска					  & footnote
+\end{tabular}
+\end{document}
