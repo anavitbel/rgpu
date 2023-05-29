@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Беленко А.В.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <script src="https://www.google.com/jsapi"></script>
+    <script>
+     google.load("visualization", "1", {packages:["corechart"]});
+     google.setOnLoadCallback(drawChart);
+     function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+       ['Впечатление', 'Соотношение'],
+       ['Продвинутая система обучения',     37],
+       ['Замечательные преподаватели на кафедре', 37],
+       ['Преподаватели всегда готовы пойти на встречу',    12],
+       ['Дружный коллектив потока', 8]
+      ]);
+      var options = {
+       title: 'Состав общего впечатления обучения на первом курсе в РГПУ им. Герцена на направлении "ИВТ"',
+       is3D: true,
+       pieResidueSliceLabel: 'Остальное'
+      };
+      var chart = new google.visualization.PieChart(document.getElementById('air'));
+       chart.draw(data, options);
+     }
+    </script>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Мои навыки и умения </h1>
+        <p>Беленко Анастасия, 1 курс ИВТ</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Мои навыки и умения</h2>
+        <p>Выполнено <a href="https://vk.com/voshodnester">Беленко Анастасией</a></p>
+        <figure>
+            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: #3D281C;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: #3D281C;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: #3D281C;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="textSlide">
+        <h2>С чего всё начиналось?</h2>
+        <p>Дети рождаются пустыми листами, белыми, как снег. Потом уже на этих листах формируются загибы, переломы, цветные пятна. Такой же была и я. Но это продолжалось недолго.</p>
+        <p>Я из такого типа детей, которые почти всё своё дошкольное время провели на улице. Помню, как однажды пришла к выводу о том, что основной показатель "взросления" у детей - это когда на ногах перестают появляться ссадины и ранки от активных прогулок во дворе.</p>
+    </section>
+
+    <section class="slide" id="textSlide">
+        <h2>Первые шаги в неизвестность</h2>
+        <p>И всё же первое моё знакомство с компьютером произошло слишком рано. Мой отец однажды пришел с работы и обнаружил меня маленькую за компьютером, тыкающую в какую-то игрушку. А мне было 5 лет на тот момент. Отец очень резко отреагировал на данную ситуацию, подумал, что компьютер мне включила моя мама. Но нет. Всё то время, что отец работал за ПК маленькая Настя подсматривала, на какие кнопки нажимает папа, чтобы эта чудо-машина заработала. Яркие цвета экрана завораживали и я просто не могла пройти мимо.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Мой первый наставник</h2>
+        <div class="columns two">
+            <p><img src="pictures/papa.jpg" height="300px"></img></p>
+            <p>А вот и он. Человек, который открыл мне новый огромный мир под названием <b>"Компьютер"</b>, а позже и <b>"Интернет"</b>.</p>
+        </div>
+    </section>
+
+    <section class="slide">
+            <figure>
+                <p></p>
+                <blockquote>
+                    <p>И мозги у тебя в отца пошли. Хочешь помочь всем и вся, начинаешь много дел одновременно, тебе интересно всё. Но ничего ты не доделываешь. Вся в отца.</p>
+                </blockquote>
+                <figcaption>Мама, Нина Андреевна</figcaption>
+                <p>И конечно же, она полностью права. Я обожаю учиться чему-то новому. И чем я только не начинала заниматься, меня всегда поддерживали мои родители. Я не могла не упоминуть их. А теперь, можем вернуться ко мне.</p>
+            </figure>
+    </section>
+
+    <section class="slide" id="textSlide">
+        <h2>BB-code как первый "язык программирования"</h2>
+        <p>Да, моё первое знакомство с тегами и таким понятием как "программирование" пошло именно от bb-кодов. Тогда ими я оформляла свой блог и страницу "О себе". Вот так выглядело окно:</p>
+        <img src="pictures/bbcode.png" height="200px"></img>
+        <style>
+                #textSlide p {
+                    line-height:1.5;
+                }
+                #textSlide img {
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+        </style>
+    </section>
+
+    <section class="slide" id="textSlidewithOmGU">
+        <p>Уроки информатики давались мне легко, я быстрее всех  выполняла задания и чаще всего скучала в конце уроков. В один день я поняла, что школы мне мало - мне нужны дополнительные курсы по программированию.</p>
+        <p>Так я поступила на курсы от Омского Государственного Университета им. Ф. М. Достоевского. Первый год был посвящен HTML, JS и основам CSS, второй полностью состоял из тем по языку программирования С#.</p>
+        <img class="omgu" src="pictures/omgu.png" height="100px"></img>
+        <p>И сейчас я студентка 1 курса РГПУ им. А.И. Герцена ИИТиТО по направлению "Информатика и вычислительная техника".</p>
+        <style>
+            #textSlidewithOmGU p {
+                line-height:1.5;
+            }
+            #textSlidewithOmGU img {
+                position: absolute;
+                top: 80%;
+                left: 80%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="photo">
+        <div class="columns two">
+            <p>За этот семестр я успела охватить большой материал в сфере информационных технологий. Более подробной мной были освоены такие программы, как MS Excel, Maxima. На практиках по дисциплинам "Инф. технологии" и "Информатика" ознакомилась с различными средами для обработки графических изобажений, а также с видео- и аудиоредакторами.</p>
+        </div>
+        <figure>
+            <img src="pictures/rgpu.jpg" class="cover"></img>
+        </figure>
+        <style>
+            #photo p{
+                line-height: 1.5;
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2>Немного статистики</h2>
+        <div id="air" style="width: 1000px; height: 400px;"></div>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Благодарность</h2>
+        <ol>
+            <li><a href="http://htmlbook.ru/blog/grafiki-i-diagrammy">Помогает разобраться с графиками</a></li>
+            <li class="next"><a href="http://canva.com">Изображения были взяты из открытого доступа онлайн-редактора Canva.com</a></li>
+            <li class="next"><a href="https://www.instagram.com/anabel_1755/">Или личного фотоархива автора (Instagram)</a></li>
+            <li class="next">Отдельное спасибо <a href="https://vk.com/egorchalapko">Егору Чалапко</a>, за ответы на вопосы, относительно работы данного движка</li>
+        </ol>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
